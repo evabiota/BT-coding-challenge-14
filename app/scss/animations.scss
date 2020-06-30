@@ -38,7 +38,7 @@
 
     }
 
-//special case to keep the margin at contact section
+//special case to keep the margin at the contact section
 
 @-webkit-keyframes lefttoRightContact {
   from {
@@ -157,8 +157,6 @@
 
     }
 
-
-
 @-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
@@ -176,8 +174,7 @@
     }
 }
 .fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+    animation: fadein 1s ease-in-out forwards;
 }
 
 
