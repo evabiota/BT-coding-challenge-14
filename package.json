@@ -1,0 +1,28 @@
+{
+  "name": "coding-challenge-14",
+  "version": "1.0.0",
+  "description": "code challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evabiota/coding-challenge-14.git"
+  },
+  "author": "eva biota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evabiota/coding-challenge-14/issues"
+  },
+  "homepage": "https://github.com/evabiota/coding-challenge-14#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
