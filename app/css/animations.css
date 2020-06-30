@@ -165,8 +165,7 @@
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  animation: fadein 1s ease-in-out forwards;
 }
 
 @-webkit-keyframes fadeInDownBig {

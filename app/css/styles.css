@@ -165,8 +165,7 @@
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  animation: fadein 1s ease-in-out forwards;
 }
 
 @-webkit-keyframes fadeInDownBig {
@@ -305,7 +304,7 @@ body {
 h1 {
   color: #fff;
   font-size: 3.3em;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 1.3em;
 }
 
@@ -442,6 +441,61 @@ ul, li {
   transition: all 0.4s ease 0s;
 }
 
+.input-group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.input-group .form-control {
+  display: block;
+  width: 211px;
+  padding: 13px 26px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.input-group .input-group-append {
+  position: absolute;
+  left: 265px;
+}
+
+.input-group .btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 13px 46px;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
@@ -461,12 +515,12 @@ ul, li {
 }
 
 .page {
-  animation: fadein 4s;
-  -moz-animation: fadein 4s;
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
   /* Firefox */
-  -webkit-animation: fadein 4s;
+  -webkit-animation: fadein 3s;
   /* Safari and Chrome */
-  -o-animation: fadein 4s;
+  -o-animation: fadein 3s;
   /* Opera */
 }
 
@@ -533,7 +587,7 @@ section {
 }
 
 .home-area {
-  height: 760px;
+  height: 840px;
   text-align: center;
   background-image: url("../images/home-bg.png");
   background-color: #050505;
@@ -544,7 +598,7 @@ section {
   height: 100%;
   vertical-align: middle;
   text-align: left;
-  margin: 185px 150px;
+  margin: 230px 150px;
 }
 
 .home-area .home-text .quote {
@@ -575,17 +629,7 @@ section {
   border-radius: 20px;
   background-image: url("../images/service-item1.png");
   clip-path: polygon(100% 82%, 83% 99%, 0% 100%, 0% 0%, 100% 0);
-  animation: fadein 1s ease-in-out forwards;
   opacity: 0;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .services-area .service-wrapper .card-2 {
@@ -596,18 +640,8 @@ section {
   border-radius: 20px;
   background-image: url("../images/service-item2.png");
   clip-path: polygon(100% 82%, 83% 99%, 0% 100%, 0% 0%, 100% 0);
-  animation: fadein-2 1s  ease-in-out forwards;
   animation-delay: 1s;
   opacity: 0;
-}
-
-@keyframes fadein-2 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .services-area .service-wrapper .card-3 {
@@ -618,18 +652,8 @@ section {
   border-radius: 20px;
   background-image: url("../images/service-item3.png");
   clip-path: polygon(100% 82%, 83% 99%, 0% 100%, 0% 0%, 100% 0);
-  animation: fadein-3 1s ease-in-out forwards;
   animation-delay: 2s;
   opacity: 0;
-}
-
-@keyframes fadein-3 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .services-area .service-wrapper .service-description {
@@ -787,7 +811,7 @@ section {
 
 .about-area .card-wrapper .card .card-description .subtitle {
   font-weight: 200;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .contact-area {
@@ -803,10 +827,10 @@ section {
 }
 
 .contact-area .contact-text {
+  width: 811px;
   height: 100%;
   vertical-align: middle;
   text-align: left;
-  margin: 150px;
 }
 
 .contact-area .contact-text .quote {
@@ -816,59 +840,8 @@ section {
   margin-bottom: -20px;
 }
 
-.contact-area .input-group {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  width: 100%;
-  margin-top: 40px;
-}
-
-.contact-area .input-group .form-control {
-  display: block;
-  width: 211px;
-  padding: 13px 26px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.contact-area .input-group .input-group-append {
-  position: absolute;
-  left: 265px;
-}
-
-.contact-area .input-group .btn {
-  display: inline-block;
-  font-weight: 400;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: 1px solid transparent;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  padding: 13px 46px;
-  font-size: 1rem;
-  line-height: 1.5;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+.contact-area .contact-text .quote-2 {
+  width: 640px;
 }
 
 .plan-area {
