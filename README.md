@@ -19,4 +19,4 @@ Feel free to ask anything you want.
 
 
 # demo
-http://www.icecreamforeva.com/BitStartz-code-challenge/app
+http://www.icecreamforeva.com/BT-coding-challenge-14
